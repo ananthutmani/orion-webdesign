@@ -17,9 +17,6 @@ html,body {
 section{
     width: 100%;
 }
-
-/* Foriegn CSS start*/
-/* preloaderbegin */
 #preloader {
     height: 100vh;
     width: 100%;
@@ -31,7 +28,6 @@ section{
     z-index: 999;
     opacity: 1;
 }
-
 .container1 {
     width: 100px;
     margin: 3em auto;
@@ -40,18 +36,15 @@ section{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .st0 {
     fill: #FFFF00;
 }
-
 .st1 {
     fill: none;
     stroke: black;
     stroke-width: 4;
     stroke-miterlimit: 10;
 }
-
 .st2 {
     fill: none;
     opacity: .5;
@@ -59,7 +52,6 @@ section{
     stroke-width: 2;
     stroke-miterlimit: 10;
 }
-
 #one {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -67,7 +59,6 @@ section{
     -webkit-animation: line-glow 1s .1s infinite;
     animation: line-glow 1s .1s infinite;
 }
-
 #two {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -75,7 +66,6 @@ section{
     -webkit-animation: line-glow 1s .2s infinite;
     animation: line-glow 1s .2s infinite;
 }
-
 #three {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -83,7 +73,6 @@ section{
     -webkit-animation: line-glow 1s .3s infinite;
     animation: line-glow 1s .3s infinite;
 }
-
 #four {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -91,7 +80,6 @@ section{
     -webkit-animation: line-glow 1s .4s infinite;
     animation: line-glow 1s .4s infinite;
 }
-
 #five {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -99,7 +87,6 @@ section{
     -webkit-animation: line-glow 1s .5s infinite;
     animation: line-glow 1s .5s infinite;
 }
-
 #six {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -107,7 +94,6 @@ section{
     -webkit-animation: line-glow 1s .6s infinite;
     animation: line-glow 1s .6s infinite;
 }
-
 #seven {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -115,12 +101,10 @@ section{
     -webkit-animation: line-glow 1s .7s infinite;
     animation: line-glow 1s .7s infinite;
 }
-
 #bulb-body-fill {
     -webkit-animation: bulb-on 1s ease infinite;
     animation: bulb-on 1s ease infinite;
 }
-
 @-webkit-keyframes line-glow {
     10% {
         -webkit-transform: scale(1.2);
@@ -128,7 +112,6 @@ section{
         opacity: 1;
     }
 }
-
 @keyframes line-glow {
     10% {
         -webkit-transform: scale(1.2);
@@ -136,7 +119,6 @@ section{
         opacity: 1;
     }
 }
-
 @-webkit-keyframes bulb-on {
     0% {
         opacity: 0;
@@ -146,7 +128,6 @@ section{
         opacity: 1;
     }
 }
-
 @keyframes bulb-on {
     0% {
         opacity: 0;
@@ -156,36 +137,20 @@ section{
         opacity: 1;
     }
 }
-
-/* Preloader end */
-
-/* Nav new exp start */
-/* The side navigation menu */
 .sidenav {
     height: 100%;
-    /* 100% Full-height */
     width: 0;
-    /* 0 width - change this with JavaScript */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Stay on top */
     top: 0;
-    /* Stay at the top */
     right: 0;
     background-color: rgba(0, 114, 166, 0.8);
-    /* Black*/
     overflow-x: hidden;
     overflow-y: hidden;
-    /* Disable horizontal scroll */
     padding-top: 10vh;
-    /* Place content 60px from the top */
     transition: 0.8s;
-    /* 0.5 second transition effect to slide in the sidenav */
     text-align: center;
 }
-
-/* The navigation menu links */
 .sidenav a {
     font-family: 'Nunito';
     padding: 8px 8px 8px 32px;
@@ -196,23 +161,17 @@ section{
     display: block;
     transition: 0.3s;
 }
-
 #special {
     color: palegoldenrod;
 }
-
 #special:hover {
     color: yellow;
     transition: 0.3s;
 }
-
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #ffc560;
     transition: 0.3s;
 }
-
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -220,14 +179,10 @@ section{
     font-size: 36px;
     margin-left: 50px;
 }
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
     padding: 20px;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 400px) {
     .sidenav {
         padding-top: 20vh;
@@ -237,7 +192,6 @@ section{
         font-size: 4vh;
     }
 }
-
 #opener {
     position: fixed;
     top: 20px;
@@ -250,7 +204,6 @@ section{
     z-index: 1;
     cursor: pointer;
 }
-
 .closebtn {
     position: fixed;
     top: 10vh;
@@ -263,11 +216,7 @@ section{
     z-index: 1;
     cursor: pointer;
 }
-
-/* New nav exp end */
-/* Execom circles */
 .bluecircle {
-    /* background-color: rgba(0, 114, 166, 1); */
     background-color: transparent;
     height: 24vh;
     width: 24vh;
@@ -285,36 +234,25 @@ section{
     width: 22vh;
     border-radius: 50%;
 }
-
-
 .execomimage {
     border-radius: 50%;
     overflow: hidden;
 }
-
 .execomimage img {
     height: 20vh;
     width: auto;
 }
-
 .execommembers {
     font-family: 'Nunito';
 }
-
 .execommembers h4 {
     font-size: 2.2vh;
     font-weight: 200;
 }
-
 .execommembers h3 {
     font-weight: 400;
     font-size: 3vh;
 }
-
-
-/* Execom circles */
-
-/* Foriegn CSS end*/
 #hero{
     height: 100vh;
     width: 100%;
@@ -322,19 +260,15 @@ section{
     padding: 0;
     overflow: hidden;
 }
-
 .orange{
     border-left: 10px solid orange;
     overflow: hidden;
 }
-
-
 #mainwrapper{
     background-image: url(../../images/bg1.svg);
     background-attachment: fixed;
     opacity: 1;
 }
-/* bg slider start */
 #page, .cb-slideshow { 
 	margin:0;
     padding:0;
@@ -342,7 +276,6 @@ section{
 #page{
     height: 0;
 }
-
 .cb-slideshow li span { 
     width: 100vw;
     height: 100vh;
@@ -363,7 +296,6 @@ section{
     -ms-animation: imageAnimation 36s linear infinite 0s;
     animation: imageAnimation 36s linear infinite 0s; 
 }
-
 .cb-slideshow li:nth-child(1) span { 
     background-image: url(../../images/Photos/1.jpg) 
 }
@@ -407,7 +339,6 @@ section{
     -ms-animation-delay: 30s;
     animation-delay: 30s; 
 }
-/* Animation for the slideshow images */
 @-webkit-keyframes imageAnimation { 
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in; }
@@ -453,7 +384,6 @@ section{
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
-/* Show at least something when animations not supported */
 .no-cssanimations .cb-slideshow li span{
 	opacity: 1;
 }
@@ -464,22 +394,15 @@ h1, h2{
     text-transform: uppercase;
     color: #0072A6;
 }
-/* bg slider end */
-
-/* Image slider CSS start*/
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
-
-/* Hide the images by default */
 .mySlides {
     display: none;
     background-color: black;
 }
-
-/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -495,22 +418,14 @@ h1, h2{
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
-/* Caption text */
-
-/* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -518,8 +433,6 @@ h1, h2{
     position: absolute;
     top: 0;
 }
-
-/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -530,20 +443,16 @@ h1, h2{
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-
 .active,
 .dot:hover {
     background-color: #bbb;
 }
-
-/* Fading animation */
 .fade {
     -webkit-animation-name: fadex;
     -webkit-animation-duration: 1.5s;
     animation-name: fadex;
     animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fadex {
     0% {
         opacity: .4;
@@ -553,7 +462,6 @@ h1, h2{
         opacity: 1;
     }
 }
-
 @keyframes fadex {
     from {
         opacity: .4;
@@ -563,13 +471,9 @@ h1, h2{
         opacity: 1;
     }
 }
-
 .fade:not(.show) {
     opacity: 1;
 }
-
-/* Image overlay start */
-
 .image {
     opacity: 1;
     display: block;
@@ -578,7 +482,6 @@ h1, h2{
     transition: .5s ease;
     backface-visibility: hidden;
 }
-
 .middle {
     transition: .5s ease;
     opacity: 0;
@@ -589,47 +492,36 @@ h1, h2{
     -ms-transform: translate(-50%, -50%);
     text-align: justify;
 }
-
 .imagebox:hover .image {
     opacity: 0.3;
 }
-
 .imagebox:hover .middle {
     opacity: 1;
 }
-
 .text {
     color: white;
 }
-
 #hovertitle {
     text-align: center;
     font-size: 4vh;
 }
-
 #hovertext {
     font-size: 2.8vh;
 }
-
 .headertxt{
     height: 30vh;
     overflow: hidden;
     opacity: 0.9;
 }
-
 .headertxt h2{
     font-weight: 700;
     text-transform: none;
     font-size: 7vh;
 }
-
 .headertxt p{
     font-size: 4vh;
     color: #EE6829;
 }
-/* Image slider CSS end*/
-
-/* Accordion start */
 .accordion {
     color: #444;
     cursor: pointer;
@@ -642,70 +534,60 @@ h1, h2{
     font-weight: 600;
     transition: 0.4s;
   }
-  .PES{
+.PES{
     background-color: rgba(117, 255, 117, 0.7);
   }
-  .PES:hover{
+.PES:hover{
       background-color: #24bf24;
   }
 .IAS{
     background-color: gainsboro;
-  }
-  
-  .accordion:hover .accordion:after {
+  }  
+.accordion:hover .accordion:after {
     color: #fff;
 }
-  .active, .accordion:hover {
+.active, .accordion:hover {
     color: black;
   } 
-  .IAS:hover{
+.IAS:hover{
     background-color: black;
     color: white;
 }
-
-  .CS{
+.CS{
     background-color: rgba(249, 246, 142, 0.9);
     color: black;
   }
-  .CS:hover{
+.CS:hover{
     background-color: gold;
     color: black;
 }
-
-  .accordion:after {
+.accordion:after {
     content: '\002B';
     font-weight: bold;
     float: right;
     margin-left: 5px;
   }
-  
-  .active:after {
+.active:after {
     content: "\2212";
-  }
-  
-  .panel {
+  }  
+.panel {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-/* Accordion end */
-
 .btn-outline-info {
     color: #338EB8;
     border-color: #338EB8;
 }
-
 .btn-outline-info:hover {
     background-color: #338EB8;
 }
-
 p{
     font-family: 'Nunito';
     font-size: 2.3vh;
 }
-
 .botmarg{
     padding-bottom: 6vh;
 }
@@ -716,24 +598,20 @@ p{
     background-color: rgba(0, 114, 166, 0.8);
     color: white;
 }
-
 .cardtext h3{
     font-family: 'Nunito';
     font-size: 3.3vh;
     font-weight: 700;
     text-align: center;
 }
-
 .cards:hover{
     animation-name: pulse;
     animation-duration: 1s;
 }
-
 .timer1, .timer2, .timer3{
     color: #0072A6;
 
 }
-
 .countnum{
     font-family: 'Nunito';
     font-weight: 700;
@@ -741,7 +619,6 @@ p{
     color: orange;
 }
 #counter p{
-    /* color: orange; */
     display: inline-block;
     height: 30vh;
     text-align: center;
@@ -749,8 +626,6 @@ p{
     font-size: 3vh;
     font-weight: 700;
   }
-
-
 @media screen and (max-width: 1040px) {
     .headertxt{
         overflow: visible;
@@ -768,7 +643,6 @@ p{
         width: 16vh;
         border-radius: 50%;
     }
-
     .orangecircle {
         height: 14vh;
         width: 14vh;
@@ -779,7 +653,6 @@ p{
         width: 14vh;
         border-radius: 50%;
     }
-
     .execomimage {
         border-radius: 50%;
         overflow: hidden;
@@ -787,30 +660,24 @@ p{
     #hovertitle {
         font-size: 2.4vh;
     }
-
     #hovertext {
         font-size: 1.7vh;
     }
-
     .execomimage img {
         height: 12vh;
         width: auto;
     }
-
     .execommembers {
         font-family: 'Nunito';
     }
-
     .execommembers h3 {
         font-size: 2.5vh;
     }
-
     .execommembers h4 {
         font-weight: 400;
         font-size: 2vh;
     }
 }
-
 @media screen and (max-width: 500px) {
         h1,h2 {
             font-size: 3.5vh;
@@ -830,8 +697,7 @@ p{
         }
         #hovertitle {
             font-size: 1.8vh;
-        }
-    
+        }   
         #hovertext {
             font-size: 1.1vh;
         }
@@ -840,8 +706,7 @@ p{
         }
         .headertxt p{
             font-size: 3vh;
-        }
-    
+        }  
 }
 
 

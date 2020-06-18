@@ -15,13 +15,11 @@ window.addEventListener("load", function () {
         loader.style.visibility = "hidden";
     }, 700);
 });
-
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
     document.getElementById("opener").style.display = "none";
     document.querySelector('html').style.overflowY = "hidden";
 }
-
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     setTimeout(function () {
@@ -29,38 +27,28 @@ function closeNav() {
     }, 600);
     document.querySelector('html').style.overflowY = "scroll";
 }
-
-// Foriegn start
 var shell = document.querySelector(".parent");
 shell.addEventListener("animationend", function () {
     (function ($) {
         $.fn.countTo = function (options) {
-            // merge the default plugin settings with the custom options
             options = $.extend({}, $.fn.countTo.defaults, options || {});
-
-            // how many times to update the value, and how much to increment the value on each update
             var loops = Math.ceil(options.speed / options.refreshInterval),
                 increment = (options.to - options.from) / loops;
-
             return $(this).each(function () {
                 var _this = this,
                     loopCount = 0,
                     value = options.from,
                     interval = setInterval(updateTimer, options.refreshInterval);
-
                 function updateTimer() {
                     value += increment;
                     loopCount++;
                     $(_this).html(value.toFixed(options.decimals));
-
                     if (typeof (options.onUpdate) == 'function') {
                         options.onUpdate.call(_this, value);
                     }
-
                     if (loopCount >= loops) {
                         clearInterval(interval);
                         value = options.to;
-
                         if (typeof (options.onComplete) == 'function') {
                             options.onComplete.call(_this, value);
                         }
@@ -68,18 +56,16 @@ shell.addEventListener("animationend", function () {
                 }
             });
         };
-
         $.fn.countTo.defaults = {
-            from: 0,  // the number the element should start at
-            to: 100,  // the number the element should end at
-            speed: 1000,  // how long it should take to count between the target numbers
-            refreshInterval: 100,  // how often the element should be updated
-            decimals: 0,  // the number of decimal places to show
-            onUpdate: null,  // callback method for every time the element is updated,
-            onComplete: null,  // callback method for when the element finishes updating
+            from: 0,
+            to: 100,
+            speed: 1000,
+            refreshInterval: 100,
+            decimals: 0,
+            onUpdate: null,
+            onComplete: null,
         };
     })(jQuery);
-
     jQuery(function ($) {
         $('.timer1').countTo({
             from: 0,
@@ -110,19 +96,14 @@ shell.addEventListener("animationend", function () {
         });
     });
 });
-// Foriegn end
-// gallery start
 var slideIndex = 1;
 showSlides(slideIndex);
-
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -142,21 +123,16 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
-// gallery end 
-
-// Accordion start
 var acc = document.getElementsByClassName("accordion");
 var i;
-
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
 }
-// Accordion end
