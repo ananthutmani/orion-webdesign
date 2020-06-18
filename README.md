@@ -1,2 +1,2 @@
-# orion-webdesign
-A repo created for Orion 2020
+# RSET-SB-sample
+A website created for the RSET IEEE SB
